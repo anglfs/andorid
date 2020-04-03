@@ -30,24 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private WebView webview;
     private String mobile;
     private String appUserId;
-    private String createTime;
-    private String email;
-    private String endTime;
-    private int id;
     private String image;
-    private String invitationCode;
-    private boolean keystoreUrl;
-    private String lastMobile;
-    private String nickName;
-    private String pwd;
-    private int regDevice;
-    private int regSource;
-    private String sign;
-    private String startTime;
-    private int status;
-    private int pageNumber;
-    private int pageSize;
-    private String orderBy;
     private   ACache mCache ;
 
     @Override
@@ -153,29 +136,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             JSONObject jsonObject = new JSONObject(data);
             mobile = jsonObject.getString("mobile");
             appUserId = jsonObject.getString("appUserId");
-            createTime = jsonObject.getString("createTime");
-            email = jsonObject.getString("email");
-            endTime = jsonObject.getString("endTime");
-            id = jsonObject.getInt("id");
             image = jsonObject.getString("image");
-            invitationCode = jsonObject.getString("invitationCode");
-            keystoreUrl = jsonObject.getBoolean("keystoreUrl");
-            lastMobile = jsonObject.getString("lastMobile");
-            nickName = jsonObject.getString("nickName");
-            pwd = jsonObject.getString("pwd");
-            regDevice = jsonObject.getInt("regDevice");
-            regSource = jsonObject.getInt("regSource");
-            sign = jsonObject.getString("sign");
-            startTime = jsonObject.getString("startTime");
-            status = jsonObject.getInt("status");
-            pageNumber = jsonObject.getInt("pageNumber");
-            pageSize = jsonObject.getInt("pageSize");
-            orderBy = jsonObject.getString("orderBy");
             webview.loadUrl("http://xland.one");
-            //  webview.loadUrl("http://xland.one"+"?mobile="+mobile+"&appUserId="+appUserId+"&createTime="+createTime+"&email="+email+"&endTime="+endTime+"&id="+id+"&image="
-            //        +image+"&invitationCode="+invitationCode+"&keystoreUrl="+keystoreUrl+"&lastMobile="+lastMobile+"&nickName="+nickName+"&pwd="+pwd+"&regDevice="+regDevice+"&regSource="
-            //      +regSource+"&sign="+sign+"&startTime="+startTime+"&status="+status+"&pageNumber="+pageNumber+"&pageSize="+pageSize+"&orderBy="+orderBy);
-
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -19,4 +19,9 @@
         android:id="@+id/navigation_notifications"
         android:name="com.example.xinglanqianbao.ui.notifications.NotificationsFragment"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="com.example.xinglanqianbao.ui.my.MyFragment"
+        tools:layout="@layout/fragment_notifications" />
 </navigation>
